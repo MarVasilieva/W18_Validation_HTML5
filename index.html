@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+            padding: 25px;
+            justify-content: center;
+            background-image: url("https://abrakadabra.fun/uploads/posts/2022-02/1644374431_2-abrakadabra-fun-p-rozovii-fon-s-kotikami-2.jpg");
+        }
+       
+        input:required:valid {
+            border-color: green;
+        }
+        #container {
+            width: 30vw;
+            height: 90vh;
+            background-color: rgb(212, 132, 172);
+            color: rgb(45, 44, 46);
+            border-radius: 4px;
+            padding: 20px;
+            font-size: 18px;
+        }
+        
+        </style>
+    <body>
+        <div id="container">
+        <form>
+            <fieldset>
+        <legend>Данные владельца</legend>  
+        <label for="name">ФИО владельца</label>
+        <p><input type="text" id="name" required placeholder="name owner">*</p>
+    
+        <label for="kontacts">Телефон владельца</label>
+        <p><input type="tel" name="phone"  placeholder=" your phone" pattern="\+?[0-9\s\-\(\)]+"
+            minlength="10" maxlength="20"/>+7(xxx)xxx-xx-xx</p>
+        
+        <label for="name">Ваш электронный адрес</label>
+        <p><input type="email" id="email" required placeholder="email">*</p>
+    </fieldset>
+        <p><h4>Порода питомца</h4></p>  
+        <select>
+        <option value="breed">сфинкс</option>
+        <option value="breed">манчкин</option>
+        <option value="breed">сиамская кошка</option>
+        <option value="breed">персидская кошка</option>
+    </select>
+        <div>
+        <p><label for="name">Количество питомцев</label>
+        <input type="number" max="10" min="1" required></p>
+    </div>
+            <h4>Выбрать корм </h4>
+            <input type="checkbox" name="food" value="1"/>
+            Сухой корм 
+            <input type="checkbox" name="food" value="2"/> 
+            Влажный корм <br />
+        <p><h4>Укажите пол питомца</h4></p>
+            <input type="radio" name="s" value="m"/> <span>Самец</span>
+            <input type="radio" name="s" value="f"/> <span>Самка</span>
+        <hr>
+        Опишите вашего питомц:
+        <div>
+        <textarea rows="3" required></textarea></div>
+        <button  >Сохранить</button>
+        </form>
+    </div>
+</body>
+</html>
