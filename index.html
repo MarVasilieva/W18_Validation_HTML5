@@ -32,7 +32,7 @@
         </style>
     <body>
         <div id="container">
-        <form>
+        <form method="post" id="form">
             <fieldset>
         <legend>Данные владельца</legend>  
         <label for="name">ФИО владельца</label>
@@ -68,8 +68,9 @@
         Опишите вашего питомц:
         <div>
         <textarea rows="3" required></textarea></div>
-        <button  >Сохранить</button>
+        <button type="submit" id="postButton" >Сохранить</button>
         </form>
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>
